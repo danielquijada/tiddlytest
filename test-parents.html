@@ -218,7 +218,7 @@ Error message and password prompt
 {"text":"yes","title":"$:/UploadWithUrlOnly"},
 {"created":"20250613213527677","text":"Parent is {{!!parent}}\n\nCan't link it like [[{{!!parent}}]]\n\n","tags":"","title":"Father","modified":"20250613213855334","parent":"Grandfather"},
 {"created":"20250613213516148","text":"No parent, sad.","tags":"","title":"Grandfather","modified":"20250613213853884"},
-{"created":"20250613213542610","text":"Parent is {{!!parent}}\n\nCan't link it like [[{{!!parent}}]]\n\nMaybe as \u003C\u003C.dlink parent {{!!parent}}Test>>\t\n\nOr as \u003C\u003C.vlink {{!!parent}}>>\t\n\nAnd neither as \u003C\u003Ctranslink \"{{!!parent}}\">>","tags":"","title":"Son","modified":"20250613220150397","parent":"Father"}
+{"created":"20250613213542610","text":"\\define mylink(parameter:\"NOWHERE\")\n[[$parent$]]\n\\end\n\nParent is {{!!parent}}\n\nLinked as literal: [[Father]]\n\nCan't link it like [[$parent$]]\n\nMaybe as \u003C\u003C.dlink parent $parent$>>\t\n\nOr as \u003C\u003C.vlink $parent$>>\t\n\nAnd neither as \u003C\u003Ctranslink \"$parent$\">>\n\n\n\u003C\u003Cmylink \"Father\">>\n\n\u003C\u003Cmylink \"{{!!parent}}\">>","tags":"","title":"Son","modified":"20250613221041601","parent":"Father"}
 ]</script><div id="storeArea" style="display:none;"></div>
 <!--~~ Library modules ~~-->
 <div id="libraryModules" style="display:none;">
